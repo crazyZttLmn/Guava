@@ -1,31 +1,20 @@
 <template>
-    <el-form ref="form" :model="form" label-width="80px">
-      <el-form-item label="假装有">
-        <el-input v-model="form.name"></el-input>
-      </el-form-item>
-    </el-form>
+<div class="">
+  <slot name="header"></slot>
+  <com-header></com-header>
+</div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        form: {
-          name: '',
-          region: '',
-          date1: '',
-          date2: '',
-          delivery: false,
-          type: [],
-          resource: '',
-          desc: ''
-        }
-      }
-    },
-    methods: {
-      onSubmit() {
-        console.log('submit!');
-      }
+import ComHeader from "@/components/Header.vue"
+export default {
+  methods: {
+    onSubmit() {
+      console.log('submit!');
     }
+  },
+  components: {
+    ComHeader
   }
+}
 </script>

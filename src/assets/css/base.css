@@ -1,0 +1,174 @@
+li {
+  list-style: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clr {
+  zoom: 1
+}
+
+.clr:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* 导航条 */
+
+.h_wrap {
+  background-color: #242424;
+}
+
+.header {
+  width: 1200px;
+  background-color: #242424;
+  color: #ccc;
+  height: 70px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+}
+
+.header h1 {
+  width: 176px;
+  height: 69px;
+  background: url('http://s2.music.126.net/style/web2/img/frame/topbar.png?cea1f9f4ee83a971e8daed67ac1f77c7') 0 0 no-repeat;
+}
+
+.header h1 a {
+  text-indent: -9999em;
+  float: left;
+  width: 157px;
+  height: 70px;
+}
+
+.nav_list {
+  padding: 0 0 0 20px;
+}
+
+.nav_list li {
+  float: left;
+}
+
+.nav_list li a {
+  line-height: 70px;
+  padding: 0 20px;
+  color: #ccc;
+  float: left;
+}
+
+.nav_list li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.n_tip {
+  width: 12px;
+  height: 7px;
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  top: 65px;
+  z-index: 10;
+  background: url('http://s2.music.126.net/style/web2/img/frame/topbar.png?cea1f9f4ee83a971e8daed67ac1f77c7') 0 9999px no-repeat;
+}
+
+.n_dot {
+  position: absolute;
+  right: 6px;
+  top: 22px;
+  width: 6px;
+  height: 6px;
+  background-color: #C20C0C;
+  border-radius: 50%;
+}
+
+.n_hot {
+  width: 28px;
+  height: 19px;
+  position: absolute;
+  right: -14px;
+  top: 22px;
+  z-index: 10;
+  background: url('http://s2.music.126.net/style/web2/img/frame/topbar.png?cea1f9f4ee83a971e8daed67ac1f77c7') -174px 0px no-repeat;
+  background-size: 220px auto;
+}
+
+.nav_list li:nth-child(3) a, .nav_list li:nth-child(6) a {
+  position: relative;
+}
+
+.nav_list li a.n_active {
+  position: relative;
+  color: #fff;
+  background-color: #000;
+}
+
+a.n_active .n_tip {
+  background-position: -105px -70px;
+  background-size: 120px auto;
+}
+
+.b_bar {
+  height: 34px;
+  background-color: #C20C0C;
+  border-bottom: 1px solid #a40011;
+}
+
+.s_bg {
+  margin-top: 20px;
+  position: relative;
+  border: none;
+  border-radius: 32px;
+  height: 32px;
+  width: 158px;
+  background-color: #fff;
+}
+
+.s_bg::after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  background: url('http://s2.music.126.net/style/web2/img/frame/topbar.png?cea1f9f4ee83a971e8daed67ac1f77c7') -3px -102px no-repeat;
+  background-size: 240px;
+}
+
+.s_bg input {
+  margin: 3px 0 0 30px;
+  border: none;
+  width: 116px;
+  height: 24px;
+  font-size: 12px;
+}
+
+.v_sub {
+  float: left;
+  width: 90px;
+  height: 32px;
+  background: url('http://s2.music.126.net/style/web2/img/frame/topbar.png?cea1f9f4ee83a971e8daed67ac1f77c7') 0px -140px no-repeat;
+  background-size: 240px;
+  color: #ccc;
+  line-height: 32px;
+  font-size: 12px;
+  text-indent: 2.7em;
+  margin: 20px 0 0 15px;
+}
+
+.v_sub:hover {
+  background-position: -100px -140px;
+  color: #fff;
+}
+
+.btn_login {
+  margin: 25px 20px 0 20px;
+}
